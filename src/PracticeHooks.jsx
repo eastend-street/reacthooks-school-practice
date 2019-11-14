@@ -1,7 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const PracticeHooks = () => {
   const [practiced, setPracticed] = useState(true);
+
+  useEffect(() => {
+    console.log(practiced);
+  });
 
   return (
     <div>
